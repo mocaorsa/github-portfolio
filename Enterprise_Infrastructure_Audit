@@ -18,7 +18,6 @@ To analyze the 2021 Facebook outage from a systems design perspective and identi
 
 ## 💡 Lessons Learned
 This lab highlighted the danger of **Single Points of Failure**. In the future, I would recommend out-of-band management for critical infrastructure to ensure access during a primary network collapse. 
-
 As far as setting up Git goes, I realized that Git is only useful if I actually log my work by committing changes. Making regular commits helps me keep track of my progress and understand how my project evolves over time. Writing clear commit messages also matters, because it reminds me why I made certain decisions. Logging my work makes it easier to fix mistakes and gives me more confidence to try new things without worrying about breaking my project.
 
 ## 📸 Proof of Work
