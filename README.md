@@ -8,8 +8,23 @@ Mission Statement: Applied Intelligence Senior Manager specializing in Operation
 
 Specialties: Strategic Manpower Planning, Optimization, Large Scale Scheduling Models, Network Models, Systems Engineering
 
+Collaborators: 	
+@Rahmah-IT	Rahmah-IT
+@MA007-Alamri	MA-Alamri MA007-Alamri	
+@PaulineKabe	PaulineKabe	
+@Fohramatu	Fohramatu	
+@asidberry	asidberry	
+@manal-u	Manal manal-u
+Manal Alessa A calm girl who loves coffee and learning Information Technology.
+@ClaireKamobaya	ClaireKamobaya	
+@z-alshehri	z-alshehri	
+@bkishman	bkishman	
+@Docsaf	Cyber_Doc Docsaf	
+@N-alaiban	N-alaiban
+
 # To be update throughout the semester 
 
 Toolkit: I will list my skills by category: Operating Systems, Security Tooling, Languages, and Frameworks.
 
 Highlight Reel: I will use Pinned Repositories to showcase my three most complex technical engagements.
+
