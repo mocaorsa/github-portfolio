@@ -1,4 +1,5 @@
-# System Audit Report
+# Lab 2: System Audit Report
+Mary Lou Hall
 
 ## System Inventory
 
@@ -19,7 +20,7 @@
 
 Ubuntu primarily uses Discretionary Access Control (DAC), where file owners control access permissions using read, write, and execute settings. Ubuntu also supports Mandatory Access Control through AppArmor, which enforces security policies on applications.
 
-To demonstrate the Principle of Least Privilege, I mocked up a sensitive file and then modified the permissions on that sensitive file so that they were restricted so that only the file owner can read and write the file. Group and other users were denied access, reducing the risk of unauthorized disclosure or modification.
+To demonstrate the Principle of Least Privilege, I mocked up a sensitive file and then modified the permissions on that sensitive file so that they were restricted so that only the file owner can read and write the file. I could tell this was accomplished in my terminal by the feedback after I changed the permissions using CHMOD and I was the only user with read (R), Write(w), and Execute (x) permissions. Group and other users were denied access, reducing the risk of unauthorized disclosure or modification.
 
 Step 1: Create a Test File
 
