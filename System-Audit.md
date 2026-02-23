@@ -1,5 +1,8 @@
 # Lab 2: System Audit Report
-Mary Lou Hall
+**Name:** Mary Lou Hall
+**Course:** IT520
+**Date:** February 2026  
+**Status:** Completed
 
 ## System Inventory
 
