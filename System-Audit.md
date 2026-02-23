@@ -18,7 +18,7 @@ Mary Lou Hall
 
 ## Access Control Model Analysis
 
-Ubuntu primarily uses Discretionary Access Control (DAC), where file owners control access permissions using read, write, and execute settings. Ubuntu also supports Mandatory Access Control through AppArmor, which enforces security policies on applications.
+Ubuntu primarily uses Discretionary Access Control (DAC), where file owners control access permissions using read, write, and execute settings. Ubuntu also supports Mandatory Access Control through AppArmor, which enforces security policies on applications. NIST identifies the standard file-permission systems of common OSs as DAC. The Official Definition: An access control policy that "leaves a certain amount of access control to the discretion of the object's owner" or authorized person. The owner can determine access rights and pass those privileges to other subjects. For Linus I can do this using chmod. NIST Source: NIST SP 800-192 and NIST SP 800-53 Rev. 5. 
 
 To demonstrate the Principle of Least Privilege, I mocked up a sensitive file and then modified the permissions on that sensitive file so that they were restricted so that only the file owner can read and write the file. I could tell this was accomplished in my terminal by the feedback after I changed the permissions using CHMOD and I was the only user with read (R), Write(w), and Execute (x) permissions. Group and other users were denied access, reducing the risk of unauthorized disclosure or modification.
 
