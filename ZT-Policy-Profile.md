@@ -1,8 +1,11 @@
 # Lab 03: Zero Trust Policy Profile
 **Name:** Mary Lou Hall
+
 **Course:** IT520
+
 **Date:** March 2, 2026  
-**Status:** Completed  
+
+**Status:** Completed!  
 
 ## 🎯 Objective
 Define the three fundamental ZTA components and design a simple access policy for a sensitive resource within a Critical Infrastructure (CI) context, demonstrating how security signals are used by the Policy Engine.
