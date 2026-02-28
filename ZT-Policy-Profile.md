@@ -67,7 +67,7 @@ The following ZTA Policy Table provides a distinct policy evaluation by the Poli
 
 
 ## 📸 Proof of Work
-![My Terminal Success](terminal.png)
+![ZT Policy Diagram created using Mermaid](Terminal2ZT.png) 
 
 
 
