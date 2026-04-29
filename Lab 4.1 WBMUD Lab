@@ -7,3 +7,95 @@ Part 1: Network Architecture
 In this lab we design and implemnt segmented enterprise network including an IT, OT, Remote and DMZ Environment. 
 The topology was built in Packet Tracer. 
 Network Topology
+
+# Lab 04: Enterprise LAN Security
+**Name:** Mary Lou Hall
+**Course:** IT520
+**Date:** January 2026  
+**Status:** Completed  
+
+## 🎯 Objective
+In this lab we design and implemnt segmented enterprise network including an IT, OT, Remote and DMZ Environment. 
+The topology was built in Packet Tracer.
+
+## 🛠️ Tools Used
+* CISCO Packet Tracer
+* Linux Terminal
+
+## 🔍 Key Findings
+
+## Part 1. **Network Architecture:** In this lab we designed and implemented a segmented enterprise network that included IT, OT, Remote Station, and a DMZ environment. 
+[Network Topology Link Here]
+**Physical Layer (Layer 1)** Physical cabling represents Layer 1 (the Physical Layer) of the OSI model because it constitutes the tangible, hardware-based 
+infrastructure responsible for transmitting raw bits (0s and 1s) as electrical, optical, or radio signals. It is the foundation for all network 
+communication, defining the physical connectors, cable types, and voltage levels used to transport data.
+
+**Data Link Layer (Layer 2)** Layer 2 switches operate at the Data Link layer by utilizing MAC addresses to direct network traffic specifically to the intended 
+destination device, rather than broadcasting it to everyone. They build a MAC address table by observing the source address of incoming frames, 
+allowing them to map specific MAC addresses to physical switch ports and forward data only to the relevant port, reducing network congestion.
+
+**Network Layer (Layer 3)**  IP addressing and routing are Layer 3 (Network Layer) functionalities because they manage logical, hierarchical addressing to 
+route data across different, interconnected networks, rather than just delivering data within a single local segment. Layer 3 handles the 
+logical addressing (IP addresses) and path selection (routing) needed for global communication.
+
+**Conntectivity Verification** The reason why some of my pings failed was due to the router
+not being "up".  I was able to discover this by using the ipconfig /all command
+to see that they were down, and then I used the CLI to format the router
+interface using the no shutdown command.
+
+## Part 2. **Protocol Security Analysis:** 
+**TCP vs. UDP**
+**Telnet TCP Test**
+**HTTP vs HTTPS**
+**HTTP and HTTPS Connectivity**
+**SSH Remote Access**
+**SSH Remote Login Screenshot**
+
+##Part 3. **Shellshock Vulnerability Assessment**
+The Shellshock vulnerability affects Bash and can allow attackers to execute commands through crafted input. 
+In this lab, the attack path was done from the DMZ network to the OT web server. 
+Connectivity from the attacker node to the OT server demonstrated that an exposed vulnerable system could be targeted.
+
+##Part 4. **Incident Response, Remediation Plan, and Exploitation Path**
+**Remediation Plan**
+Enforce HTTPS instead of HTTP for Secure Communication
+Add security to eliminate the vulnerability
+Add a firewall to Restrict Access from the DMZ to OT resources
+Monitor the network for suspicious traffice using logging fitles
+
+**Attacker Path**
+DMZ attack (203.0.113.100) >> Router Access >> OT web Server (192.168.50.10) >> impact on internal OT Systems (access SCATA OT devices)
+
+##Part 5. **OSI Model Mapping Summary**
+
+**Layer 1 - Physical: Cabling Devices Layer**
+**Layer 2 - Data Link: Switch MAC Table Layer**
+**Layer 3 - Network: IP Addressing & Routing**
+**Layer 4 - Transport: TCP vs UDP**
+**Layer 5 - Security: SSH Session**
+**Layer 6 - Presentation: HTTPS Encryption Layer**
+**Layer 7 - Application: HTTP, HTTPS, SSH**
+
+## 💡 Reflection
+This lab demonstrated the interdependence of network architecture and security in enterprise environments. 
+By creating and configuring a network that included IT, OT, remote, and DMZ environments, I had the opportunity to 
+experiment with CISCO packet tracer, and understand ways to improve connectivity and security. 
+By structuring the network into separate segments we could ensure that critical systems, 
+especially those in the OT environment, are not directly exposed to external threats. 
+Throughout the lab, I gained a deeper understanding of how the OSI model applies to real-world networking and security. 
+Although I worked hard to ensure the Physical and Data Link layers had proper connectivity, I still had challenges designing
+an appropriate way to fully connect the pump mechanism.  The Network layer would have allowed for communication between the 
+different segments, had I been able to fully implement the Route path. Because I was not able to properly configure them, 
+the routing also introduced security risks by allowing unauthorized access between networks. 
+I learned that each layer should contribute to both communication and protection. By comparing HTTP and HTTPS, we could show
+how encryption protects data from interception, while SSH demonstrated secure remote management compared to Telnet. 
+Analyzing TCP and UDP helped us understand how reliability and visibility impact security monitoring. 
+The shellshock vulnerability showed how unpatched systems can be attacked, especially when exposed to external 
+networks like the DMZ. All of this reinforced the importance of regular updates, proper access control, and network 
+segmentation. Although this was one of the most challenging labs I have completed so far, and my execution was not completely successful, 
+it gave me hands-on experience in building and securing a network. Overall, this lab showed that effective security 
+must be built into the network design itself. A well-structured architecture, combined with secure protocols and 
+proper configuration, is essential for protecting enterprise systems and critical infrastructure from cyber threats.
+
+## 📸 Proof of Work
+![My Terminal Success](TerminalWBMUD.png)
