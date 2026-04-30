@@ -1,18 +1,10 @@
-Lab 04: Enterprise LAN Security
-Name: Mary Lou Hall
-Course: IT 520
-Date: 4/29/2026
-
-Part 1: Network Architecture
-In this lab we design and implemnt segmented enterprise network including an IT, OT, Remote and DMZ Environment. 
-The topology was built in Packet Tracer. 
-Network Topology
-
 # Lab 04: Enterprise LAN Security
 **Name:** Mary Lou Hall
+
 **Course:** IT520
-**Date:** January 2026  
-**Status:** Completed  
+
+**Date:** April 2026  
+
 
 ## 🎯 Objective
 In this lab we design and implemnt segmented enterprise network including an IT, OT, Remote and DMZ Environment. 
@@ -26,7 +18,8 @@ The topology was built in Packet Tracer.
 
 ## Part 1. **Network Architecture:** In this lab we designed and implemented a segmented enterprise network that included IT, OT, Remote Station, and a DMZ environment. 
 [Network Topology Link Here]
-**Physical Layer (Layer 1)** Physical cabling represents Layer 1 (the Physical Layer) of the OSI model because it constitutes the tangible, hardware-based 
+
+**Physical Layer (Layer 1)** - Physical cabling represents Layer 1 (the Physical Layer) of the OSI model because it constitutes the tangible, hardware-based 
 infrastructure responsible for transmitting raw bits (0s and 1s) as electrical, optical, or radio signals. It is the foundation for all network 
 communication, defining the physical connectors, cable types, and voltage levels used to transport data.
 
@@ -43,20 +36,28 @@ not being "up".  I was able to discover this by using the ipconfig /all command
 to see that they were down, and then I used the CLI to format the router
 interface using the no shutdown command.
 
-## Part 2. **Protocol Security Analysis:** 
+## Part 2. 
+
+**Protocol Security Analysis:** 
+
 **TCP vs. UDP**
+
 **Telnet TCP Test**
+
 **HTTP vs HTTPS**
+
 **HTTP and HTTPS Connectivity**
+
 **SSH Remote Access**
+
 **SSH Remote Login Screenshot**
 
-##Part 3. **Shellshock Vulnerability Assessment**
+## Part 3. **Shellshock Vulnerability Assessment**
 The Shellshock vulnerability affects Bash and can allow attackers to execute commands through crafted input. 
 In this lab, the attack path was done from the DMZ network to the OT web server. 
 Connectivity from the attacker node to the OT server demonstrated that an exposed vulnerable system could be targeted.
 
-##Part 4. **Incident Response, Remediation Plan, and Exploitation Path**
+## Part 4. **Incident Response, Remediation Plan, and Exploitation Path**
 **Remediation Plan**
 Enforce HTTPS instead of HTTP for Secure Communication
 Add security to eliminate the vulnerability
@@ -66,7 +67,7 @@ Monitor the network for suspicious traffice using logging fitles
 **Attacker Path**
 DMZ attack (203.0.113.100) >> Router Access >> OT web Server (192.168.50.10) >> impact on internal OT Systems (access SCATA OT devices)
 
-##Part 5. **OSI Model Mapping Summary**
+## Part 5. **OSI Model Mapping Summary**
 
 **Layer 1 - Physical: Cabling Devices Layer**
 **Layer 2 - Data Link: Switch MAC Table Layer**
